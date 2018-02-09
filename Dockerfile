@@ -26,7 +26,6 @@ RUN /usr/bin/caddy -version
 RUN /usr/bin/caddy -plugins
 
 EXPOSE 80 443 2015
-VOLUME /root/.caddy /srv
 WORKDIR /srv
 
 COPY Caddyfile /etc/Caddyfile
